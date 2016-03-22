@@ -3,7 +3,10 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+<<<<<<< HEAD
     <Property name="resizable" type="boolean" value="false"/>
+=======
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -24,13 +27,24 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
           <Component id="jScrollPane1" alignment="0" min="-2" pref="591" max="-2" attributes="0"/>
+=======
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
               <Component id="jScrollPane1" min="-2" pref="451" max="-2" attributes="0"/>
+=======
+              <Component id="jScrollPane1" min="-2" pref="386" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -46,6 +60,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -76,12 +91,28 @@
                           </Group>
                       </Group>
                       <EmptySpace pref="49" max="32767" attributes="0"/>
+=======
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jPanel2" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTextField9" min="-2" pref="181" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel1" alignment="0" min="-2" pref="369" max="-2" attributes="0"/>
+                          <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="29" max="32767" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -106,6 +137,19 @@
                           <Component id="jBReset" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+=======
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel12" alignment="3" max="32767" attributes="0"/>
+                          <Component id="jTextField9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jPanel2" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jPanel3" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Group>
               </Group>
             </DimensionLayout>
@@ -133,6 +177,14 @@
                 <Property name="text" type="java.lang.String" value="Regimental No :"/>
               </Properties>
             </Component>
+<<<<<<< HEAD
+=======
+            <Component class="javax.swing.JTextField" name="jTextField9">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField9ActionPerformed"/>
+              </Events>
+            </Component>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
             <Container class="javax.swing.JPanel" name="jPanel2">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -149,17 +201,26 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jTFlat" pref="102" max="32767" attributes="0"/>
+=======
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jTextField1" min="-2" pref="57" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
+<<<<<<< HEAD
                                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="jTState" pref="102" max="32767" attributes="0"/>
@@ -178,6 +239,35 @@
                               <Component id="jTTown" pref="128" max="32767" attributes="0"/>
                               <Component id="jTRoad" max="32767" attributes="0"/>
                               <Component id="jTCountry" max="32767" attributes="0"/>
+=======
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jTextField3" max="32767" attributes="0"/>
+                                      <Component id="jComboBox1" min="-2" pref="97" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jTextField2" max="32767" attributes="0"/>
+                                      <Component id="jTextField4" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="jComboBox2" min="-2" pref="111" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -187,6 +277,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jTFlat" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -203,13 +294,37 @@
                                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jTTown" alignment="0" min="-2" max="-2" attributes="0"/>
+=======
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                               <Component id="jTState" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               <Component id="jTCountry" min="-2" max="-2" attributes="0"/>
+=======
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jComboBox2" alignment="0" min="-2" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -222,6 +337,18 @@
                     <Property name="text" type="java.lang.String" value="Area/Locality :"/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
+=======
+                <Component class="javax.swing.JComboBox" name="jComboBox2">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="1">
+                        <StringItem index="0" value="Select"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                 <Component class="javax.swing.JLabel" name="jLabel7">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Country :"/>
@@ -237,6 +364,7 @@
                     <Property name="text" type="java.lang.String" value="Flat/Door/Buuilding:"/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
                 <Component class="javax.swing.JTextField" name="jTLocality">
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTLocalityActionPerformed"/>
@@ -252,6 +380,23 @@
                 <Component class="javax.swing.JTextField" name="jTTown">
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTTownActionPerformed"/>
+=======
+                <Component class="javax.swing.JTextField" name="jTextField3">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextField2">
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextField1">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextField4">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField4ActionPerformed"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel3">
@@ -259,6 +404,7 @@
                     <Property name="text" type="java.lang.String" value="Road/street :"/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
                 <Component class="javax.swing.JLabel" name="jLabel6">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="State :"/>
@@ -273,6 +419,24 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTStateActionPerformed"/>
                   </Events>
+=======
+                <Component class="javax.swing.JComboBox" name="jComboBox1">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="1">
+                        <StringItem index="0" value="Select"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel6">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="State :"/>
+                  </Properties>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                 </Component>
               </SubComponents>
             </Container>
@@ -299,9 +463,15 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+<<<<<<< HEAD
                               <Component id="jTFathersName" max="32767" attributes="0"/>
                               <Component id="jTWifesName" max="32767" attributes="0"/>
                               <Component id="jTNextOfKin" min="-2" pref="118" max="-2" attributes="0"/>
+=======
+                              <Component id="jTextField5" max="32767" attributes="0"/>
+                              <Component id="jTextField8" max="32767" attributes="0"/>
+                              <Component id="jTextField10" min="-2" pref="118" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -312,17 +482,29 @@
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
+<<<<<<< HEAD
                                       <Component id="jTChildrenName" max="32767" attributes="0"/>
                                       <Component id="jTMothersName" min="-2" pref="117" max="-2" attributes="0"/>
+=======
+                                      <Component id="jTextField7" max="32767" attributes="0"/>
+                                      <Component id="jTextField6" min="-2" pref="117" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
+<<<<<<< HEAD
                                   <Component id="jCRelationship" min="-2" pref="78" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="43" max="32767" attributes="0"/>
+=======
+                                  <Component id="jComboBox3" min="-2" pref="78" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="25" max="32767" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -333,22 +515,38 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                               <Component id="jTFathersName" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jTMothersName" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                              <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                               <Component id="jTChildrenName" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jTWifesName" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                              <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField8" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+<<<<<<< HEAD
                                   <Component id="jTNextOfKin" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jCRelationship" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                                  <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                               </Group>
                               <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -373,9 +571,15 @@
                     <Property name="text" type="java.lang.String" value="Next Of Kin :"/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
                 <Component class="javax.swing.JTextField" name="jTWifesName">
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTWifesNameActionPerformed"/>
+=======
+                <Component class="javax.swing.JTextField" name="jTextField8">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField8ActionPerformed"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel14">
@@ -383,7 +587,11 @@
                     <Property name="text" type="java.lang.String" value="Relationship with next of kin :"/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
                 <Component class="javax.swing.JComboBox" name="jCRelationship">
+=======
+                <Component class="javax.swing.JComboBox" name="jComboBox3">
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="7">
@@ -403,9 +611,15 @@
                     <Property name="text" type="java.lang.String" value="Wife&apos;s Name :"/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
                 <Component class="javax.swing.JTextField" name="jTNextOfKin">
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTNextOfKinActionPerformed"/>
+=======
+                <Component class="javax.swing.JTextField" name="jTextField10">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField10ActionPerformed"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel8">
@@ -413,6 +627,7 @@
                     <Property name="text" type="java.lang.String" value="Father&apos;s Name:"/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
                 <Component class="javax.swing.JTextField" name="jTFathersName">
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTChildrenName">
@@ -420,10 +635,20 @@
                 <Component class="javax.swing.JTextField" name="jTMothersName">
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTMothersNameActionPerformed"/>
+=======
+                <Component class="javax.swing.JTextField" name="jTextField5">
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextField7">
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextField6">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField6ActionPerformed"/>
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Events>
                 </Component>
               </SubComponents>
             </Container>
+<<<<<<< HEAD
             <Component class="javax.swing.JButton" name="jBSubmit">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Submit"/>
@@ -460,6 +685,8 @@
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="25"/>
               </AuxValues>
             </Component>
+=======
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
           </SubComponents>
         </Container>
       </SubComponents>

@@ -12,11 +12,17 @@ package bsf.conn;
  */
 import javax.swing.*;
 import java.sql.*;
+<<<<<<< HEAD
 import bsf.main.*;
 public class LoginPage extends javax.swing.JFrame {
 private Connection con = null;
 PreparedStatement ps = null;
 ResultSet rs = null;
+=======
+import bsf.info.*;
+public class LoginPage extends javax.swing.JFrame {
+Connection con = null;
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
 
 public LoginPage() {
         initComponents();
@@ -39,11 +45,16 @@ public LoginPage() {
         jLabel1 = new javax.swing.JLabel();
         jBLogin = new javax.swing.JButton();
         jPassword = new javax.swing.JPasswordField();
+<<<<<<< HEAD
         jBReset = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+=======
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(0, 0, 255))); // NOI18N
 
@@ -57,6 +68,7 @@ public LoginPage() {
                 jBLoginActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         jBLogin.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jBLoginKeyPressed(evt);
@@ -74,6 +86,8 @@ public LoginPage() {
                 jBResetKeyPressed(evt);
             }
         });
+=======
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -82,6 +96,7 @@ public LoginPage() {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -95,6 +110,21 @@ public LoginPage() {
                 .addGap(18, 18, 18)
                 .addComponent(jBReset)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 45, Short.MAX_VALUE)
+                        .addComponent(jBLogin)
+                        .addGap(58, 58, 58))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPassword)
+                            .addComponent(jUserName))))
+                .addContainerGap())
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,6 +138,7 @@ public LoginPage() {
                     .addComponent(jLabel2)
                     .addComponent(jPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+<<<<<<< HEAD
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBLogin)
                     .addComponent(jBReset))
@@ -116,20 +147,31 @@ public LoginPage() {
 
         jLabel3.setIcon(new javax.swing.ImageIcon("images.jpg"));
 
+=======
+                .addComponent(jBLogin)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addContainerGap(72, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+=======
+                .addContainerGap(168, Short.MAX_VALUE)
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(67, 67, 67)
@@ -138,6 +180,11 @@ public LoginPage() {
                         .addContainerGap()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(41, Short.MAX_VALUE))
+=======
+                .addGap(67, 67, 67)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(93, Short.MAX_VALUE))
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
         );
 
         pack();
@@ -145,6 +192,7 @@ public LoginPage() {
 
     private void jBLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBLoginActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
         String sql = "select * from admins where Name=? and Password=? ";
         try
         {
@@ -218,6 +266,20 @@ public LoginPage() {
     
     }//GEN-LAST:event_jBResetKeyPressed
 
+=======
+        if (jUserName.getText().equals("Vinod") && jPassword.getText().equals("root"))
+                {
+                    JOptionPane.showMessageDialog(null, "UserName And Password Is Correct");
+                    PersonalInformation pi = new PersonalInformation();
+                    pi.setVisible(true);
+                }
+        else
+        {
+                        JOptionPane.showMessageDialog(null, "UserName And Password Is Not Correct");
+        }
+    }//GEN-LAST:event_jBLoginActionPerformed
+
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
     /**
      * @param args the command line arguments
      */
@@ -255,10 +317,15 @@ public LoginPage() {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBLogin;
+<<<<<<< HEAD
     private javax.swing.JButton jBReset;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+=======
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+>>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPassword;
     private javax.swing.JTextField jUserName;
