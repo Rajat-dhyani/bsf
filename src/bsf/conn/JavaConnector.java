@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 package bsf.conn;
@@ -19,8 +18,8 @@ public class JavaConnector
     
     try{
         Class.forName("org.sqlite.JDBC");
-        con = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\rajat_000\\Documents\\NetBeansProjects\\BSF");
-        JOptionPane.showMessageDialog(null, "Connection Enstablished");
+        con = DriverManager.getConnection("jdbc:sqlite:.\\Bsf.sqlite");
+       JOptionPane.showMessageDialog(null, "Connection Enstablished");
         return con;
     }   
     catch (Exception ex)
@@ -32,38 +31,3 @@ public class JavaConnector
 }
     
 
-=======
-
-
-package bsf.conn;
-
-/**
- *
- * @author rajat_000
- */
-import java.sql.*;
-import javax.swing.*;
-
-public class JavaConnector 
-{
-     private static Connection con = null;
-    
-    public static Connection connectionDb()
-    {
-    
-    try{
-        Class.forName("org.sqlite.JDBC");
-        con = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\rajat_000\\Documents\\NetBeansProjects\\BSF");
-        JOptionPane.showMessageDialog(null, "Connection Enstablished");
-        return con;
-    }   
-    catch (Exception ex)
-    {
-        JOptionPane.showMessageDialog(null, ex);
-         return null;
-    }
-    }
-}
-    
-
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35

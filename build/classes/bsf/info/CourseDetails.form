@@ -10,10 +10,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-<<<<<<< HEAD
     <Property name="resizable" type="boolean" value="false"/>
-=======
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -35,7 +32,6 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
-<<<<<<< HEAD
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
               <Component id="jBSubmit" min="-2" max="-2" attributes="0"/>
@@ -43,13 +39,10 @@
               <Component id="jBReset" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
-=======
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -59,9 +52,6 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
-=======
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
       </Group>
     </DimensionLayout>
   </Layout>
@@ -74,7 +64,6 @@
               <Component id="jLabel38" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jTRegimentalNo" min="-2" pref="162" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
@@ -94,16 +83,6 @@
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-=======
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField27" min="-2" pref="181" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel20" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
               </Group>
           </Group>
         </DimensionLayout>
@@ -111,7 +90,6 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jLabel38" min="-2" pref="24" max="-2" attributes="0"/>
-<<<<<<< HEAD
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
@@ -133,16 +111,6 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jPanel21" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-=======
-                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel39" alignment="3" max="32767" attributes="0"/>
-                      <Component id="jTextField27" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jPanel20" min="-2" pref="129" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
               </Group>
           </Group>
         </DimensionLayout>
@@ -170,23 +138,11 @@
             <Property name="text" type="java.lang.String" value="Regimental No :"/>
           </Properties>
         </Component>
-<<<<<<< HEAD
-=======
-        <Component class="javax.swing.JTextField" name="jTextField27">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField27ActionPerformed"/>
-          </Events>
-        </Component>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
         <Container class="javax.swing.JPanel" name="jPanel20">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-<<<<<<< HEAD
                 <TitledBorder title="Primary Education">
-=======
-                <TitledBorder title="Course Details">
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   <Font PropertyName="font" name="Tahoma" size="12" style="1"/>
                 </TitledBorder>
               </Border>
@@ -200,7 +156,6 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
@@ -211,18 +166,6 @@
                                       <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jTNameoftheinstitute" min="-2" pref="169" max="-2" attributes="0"/>
-=======
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jTextField1" min="-2" pref="168" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField2" min="-2" pref="169" max="-2" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                                   </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -238,19 +181,11 @@
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-<<<<<<< HEAD
                           <Component id="jTGrade" max="32767" attributes="0"/>
                           <Component id="jTDegree" max="32767" attributes="0"/>
                           <Component id="jTYear" min="-2" pref="104" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="50" max="32767" attributes="0"/>
-=======
-                          <Component id="jTextField5" max="32767" attributes="0"/>
-                          <Component id="jTextField3" max="32767" attributes="0"/>
-                          <Component id="jTextField4" min="-2" pref="104" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Group>
               </Group>
             </DimensionLayout>
@@ -263,40 +198,22 @@
                               <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                                   <Component id="jTNameOfCourse" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                                   <Component id="jTDegree" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel43" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                                   <Component id="jTYear" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                               </Group>
                               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel44" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
-<<<<<<< HEAD
                                   <Component id="jTGrade" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTNameoftheinstitute" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -304,27 +221,14 @@
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
-=======
-                                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-<<<<<<< HEAD
             <Component class="javax.swing.JTextField" name="jTDegree">
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTDegreeActionPerformed"/>
-=======
-            <Component class="javax.swing.JTextField" name="jTextField3">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel42">
@@ -342,7 +246,6 @@
                 <Property name="text" type="java.lang.String" value="Name of the course :"/>
               </Properties>
             </Component>
-<<<<<<< HEAD
             <Component class="javax.swing.JTextField" name="jTNameOfCourse">
             </Component>
             <Component class="javax.swing.JTextField" name="jTNameoftheinstitute">
@@ -353,18 +256,6 @@
             <Component class="javax.swing.JTextField" name="jTGrade">
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTGradeActionPerformed"/>
-=======
-            <Component class="javax.swing.JTextField" name="jTextField1">
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField5">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField5ActionPerformed"/>
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel41">
@@ -377,7 +268,6 @@
                 <Property name="text" type="java.lang.String" value="Grade"/>
               </Properties>
             </Component>
-<<<<<<< HEAD
             <Component class="javax.swing.JTextField" name="jTYear">
             </Component>
           </SubComponents>
@@ -670,15 +560,11 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTYear2">
-=======
-            <Component class="javax.swing.JTextField" name="jTextField4">
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-<<<<<<< HEAD
     <Component class="javax.swing.JButton" name="jBSubmit">
       <Properties>
         <Property name="text" type="java.lang.String" value="Submit"/>
@@ -695,7 +581,5 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBResetActionPerformed"/>
       </Events>
     </Component>
-=======
->>>>>>> a8fee7df1a23f0ccd90e67e18f60cd92053cbc35
   </SubComponents>
 </Form>
