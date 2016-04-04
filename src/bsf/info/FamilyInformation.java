@@ -34,6 +34,8 @@ public class FamilyInformation extends javax.swing.JFrame {
         con = JavaConnector.connectionDb();
         if (jOperation.getText().equals("update"))
             update();
+        else
+            jBResetActionPerformed(null);
     }   
     private void update()
     {
@@ -324,6 +326,11 @@ public class FamilyInformation extends javax.swing.JFrame {
         });
 
         jBReset.setText("Reset");
+        jBReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBResetActionPerformed(evt);
+            }
+        });
 
         jTRegimentalNo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
@@ -468,6 +475,23 @@ public class FamilyInformation extends javax.swing.JFrame {
     private void jTStateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTStateActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTStateActionPerformed
+
+    private void jBResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBResetActionPerformed
+        // TODO add your handling code here:
+            jTFlat.setText("");
+            jTRoad.setText("");
+            jTLocality.setText("");
+            jTTown.setText("");
+            jTState.setText("");
+            jTCountry.setText("");
+            jTFathersName.setText("");
+            jTMothersName.setText("");
+            jTWifesName.setText("");
+            jTChildrenName.setText("");
+            jTNextOfKin.setText("");
+            jCRelationship.setSelectedIndex(0);
+        
+    }//GEN-LAST:event_jBResetActionPerformed
 
     /**
      * @param args the command line arguments

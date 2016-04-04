@@ -30,6 +30,8 @@ public class CourseDetails extends javax.swing.JFrame {
         con = JavaConnector.connectionDb();
         if (jOperation.getText().equals("update"))
             update();
+        else
+            jBResetActionPerformed(null);
     
     }
     private void update()
@@ -547,6 +549,25 @@ public class CourseDetails extends javax.swing.JFrame {
 
     private void jBResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBResetActionPerformed
         // TODO add your handling code here:
+            jTRegimentalNo.setText("");
+            jTNameOfCourse.setText("");
+            jTNameoftheinstitute.setText("");
+            jTDegree.setText("");
+            jTYear.setText("");
+            jTGrade.setText("");
+            
+            jTNameOfCourse1.setText("");
+            jTNameoftheinstitute1.setText("");
+            jTDegree1.setText("");
+            jTYear1.setText("");
+            jTGrade1.setText("");
+            
+            jTNameOfCourse2.setText("");
+            jTNameoftheinstitute2.setText("");
+            jTDegree2.setText("");
+            jTYear2.setText("");
+            jTGrade2.setText("");
+        
     }//GEN-LAST:event_jBResetActionPerformed
 
     private void jTDegree1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTDegree1ActionPerformed

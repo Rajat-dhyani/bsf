@@ -35,6 +35,8 @@ public class PersonalInformation extends javax.swing.JFrame {
         con = JavaConnector.connectionDb();
         if (jOperation.getText().equals("update"))
             update();
+        else
+            jBResetActionPerformed(null);
     }
     
     private void update()
@@ -918,6 +920,11 @@ public class PersonalInformation extends javax.swing.JFrame {
         );
 
         jBReset.setText("Reset");
+        jBReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBResetActionPerformed(evt);
+            }
+        });
 
         jBSubmit.setText("Submit ");
         jBSubmit.addActionListener(new java.awt.event.ActionListener() {
@@ -1034,7 +1041,7 @@ public class PersonalInformation extends javax.swing.JFrame {
 INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Middle Name","Last Name","PAN","Rank ","SEX","Phone No ","Blood Group ","PRAN No ","Bank Acount No ","ID Card No","Adhar No ","Driving License","Date Of Birth ","Govt. Serv. ","Battalion 
         */
         try{
-            String st = "Insert into PersonalInformation (RegimentalNo,First_Name,Middle_Name,Last_Name,PAN,Rank,SEX,Phone NO,Blood_Group,PRAN_NO,Bank_Account_No,ID_Card_No,Adhar_No,Driving_License,Date_Of_Birth,Govt._Serv.,Battalion) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String st = "Insert into PersonalInformation (RegimentalNo, FirstName, Middle_Name, Last_Name, PAN, Rank, SEX, Phone_NO,Blood_Group,PRAN_NO,Bank_Account_No,ID_Card_No,Adhar_No,Driving_License,Date_Of_Birth,Govt_Serv,Battalion) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             ps = con.prepareStatement(st);
             ps.setInt(1, Integer.parseInt(jTRegimentalNo.getText()));
             ps.setString(2, jTFirstName.getText());
@@ -1043,38 +1050,57 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
             ps.setString(5, jTPan.getText());
             ps.setString(6, jTRank.getText());
             ps.setString(7, jCSEX.getSelectedItem().toString());
-            ps.setInt(8, Integer.parseInt(jTPhoneNo.getText()));
-            ps.setString(9, jTPranNo.getText());
-            ps.setString(10, jTBankAccountNo.getText());
-            ps.setInt(11, Integer.parseInt(jIdCardno.getText()));
-            ps.setString(12, jTAdharNo.getText());
-            ps.setString(13, jCDrivingLicense.getSelectedItem().toString());
-            ps.setDate(14,Date.valueOf( jDDateOfBirth.getDate().toString()));
-            ps.setDate(15,Date.valueOf( jDGovtServ.getDate().toString()));
-            ps.setDate(16,Date.valueOf( jDBattalion.getDate().toString()));
+            if((jTPhoneNo.getText() != null))
+               ps.setInt(8, Integer.parseInt(jTPhoneNo.getText()));
+            ps.setString(9, jCBloodGroup.getSelectedItem().toString());
+            ps.setString(10, jTPranNo.getText());
+            if((jTBankAccountNo.getText()!= null))
+                ps.setString(11, jTBankAccountNo.getText());
+            if((jIdCardno.getText()!= null))
+                ps.setInt(12, Integer.parseInt(jIdCardno.getText()));
+            ps.setString(13, jTAdharNo.getText());
+            ps.setString(14, jCDrivingLicense.getSelectedItem().toString());
+            if ((jDDateOfBirth.getDate()!= null))
+                ps.setDate(15,new java.sql.Date(jDDateOfBirth.getDate().getTime()));
+            if ((jDGovtServ.getDate()!= null))
+                ps.setDate(16,new java.sql.Date( jDGovtServ.getDate().getTime()));
+            if ((jDBattalion.getDate()!= null))
+                ps.setDate(17,new java.sql.Date( jDBattalion.getDate().getTime()));
             rs= ps.executeQuery();
 
-            st = "Insert into LeaveDetails (RegimentalNo,EarnleaveFrom1,EarnleaveTo,ElNoOfDays1,EarnleaveFrom2,EarnleaveTO2,ELNoOfDays2,EarnleaveFrom3,EarnleaveTo3,ELNoOfDays3,CommonleaveFrom1,CommonleaveTo1,CLNoOfDays1,CommonleaveFrom2, CommonleaveTo2,CLNoOfDays2,CommonleaveFrom3,CommonleaveTo3,CLNoOfDays3,TotalNoOfDays) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            st = "Insert into LeaveDetails (RegimentalNo,EarnleaveFrom1,EarnleaveTo,ElNoOfDays1,EarnleaveFrom2,EarnleaveTO2,ELNoOfDays2,EarnleaveFrom3,EarnleaveTo3,ELNoOfDays3,CommonleaveFrom1,CommonleaveTo1,CLNoOfDays1,CommonleaveFrom2,CommonleaveTo2,CLNoOfDays2,CommonleaveFrom3,CommonleaveTo3,CLNoOfDays3,TotalNoOfDays) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             ps = con.prepareStatement(st);
             
             ps.setInt(1, Integer.parseInt(jTRegimentalNo.getText()));
-            ps.setDate(2,Date.valueOf( jDELFrom1.getDate().toString()));
-            ps.setDate(3,Date.valueOf( jDELTo1.getDate().toString()));
+            if ((jDELFrom1.getDate()!= null))
+                ps.setDate(2,new java.sql.Date( jDELFrom1.getDate().getTime()));
+            if ((jDELTo1.getDate()!= null))
+                ps.setDate(3,new java.sql.Date( jDELTo1.getDate().getTime()));
             ps.setInt(4,Integer.parseInt(jLEarn1.getText()));
-            ps.setDate(5,Date.valueOf( jDELFrom2.getDate().toString()));
-            ps.setDate(6,Date.valueOf( jDELTo2.getDate().toString()));
+            if ((jDELFrom2.getDate()!= null))
+                ps.setDate(5,new java.sql.Date( jDELFrom2.getDate().getTime()));
+            if ((jDELTo2.getDate()!= null))
+                ps.setDate(6,new java.sql.Date( jDELTo2.getDate().getTime()));
             ps.setInt(7,Integer.parseInt(jLEarn2.getText()));
-            ps.setDate(8,Date.valueOf( jDELFrom3.getDate().toString()));
-            ps.setDate(9,Date.valueOf( jDELTo3.getDate().toString()));
+            if ((jDELFrom3.getDate()!= null))
+                ps.setDate(8,new java.sql.Date( jDELFrom3.getDate().getTime()));
+            if ((jDELTo3.getDate()!= null))
+                ps.setDate(9,new java.sql.Date( jDELTo3.getDate().getTime()));
             ps.setInt(10,Integer.parseInt(jLEarn3.getText()));
-            ps.setDate(11,Date.valueOf( jDCLFrom1.getDate().toString()));
-            ps.setDate(12,Date.valueOf( jDCLTO1.getDate().toString()));
+            if ((jDCLFrom1.getDate()!= null))
+                ps.setDate(11,new java.sql.Date( jDCLFrom1.getDate().getTime()));
+            if ((jDCLTO1.getDate()!= null))
+                ps.setDate(12,new java.sql.Date( jDCLTO1.getDate().getTime()));
             ps.setInt(13,Integer.parseInt(jLCLNoOFDays1.getText()));
-            ps.setDate(14,Date.valueOf( jDCLFrom2.getDate().toString()));
-            ps.setDate(15,Date.valueOf( jDCLTO2.getDate().toString()));
+            if ((jDCLFrom2.getDate()!= null))
+                ps.setDate(14,new java.sql.Date( jDCLFrom2.getDate().getTime()));
+            if ((jDCLTO2.getDate()!= null))
+                ps.setDate(15,new java.sql.Date( jDCLTO2.getDate().getTime()));
             ps.setInt(16,Integer.parseInt(jLCLNoOFDays2.getText()));
-            ps.setDate(17,Date.valueOf( jDCLFrom3.getDate().toString()));
-            ps.setDate(18,Date.valueOf( jDCLTO3.getDate().toString()));
+            if ((jDCLFrom3.getDate()!= null))
+                ps.setDate(17,new java.sql.Date( jDCLFrom3.getDate().getTime()));
+            if ((jDCLTO3.getDate()!= null))
+                ps.setDate(18,new java.sql.Date( jDCLTO3.getDate().getTime()));
             ps.setInt(19,Integer.parseInt(jLCLNoOFDays3.getText()));
             ps.setInt(20,Integer.parseInt(jLTotal.getText()));
             
@@ -1099,7 +1125,7 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
         }
         catch(Exception ex)
         {
-            JOptionPane.showMessageDialog(null,ex);
+            JOptionPane.showMessageDialog(null,ex.getMessage());
         }
     }//GEN-LAST:event_jBSubmitActionPerformed
 
@@ -1183,19 +1209,7 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
 
     private void jDELTo1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jDELTo1FocusGained
         // TODO add your handling code here:
-        try{
-            int datefrom = Integer.parseInt(jDELFrom1.getDate().toString());
-        JOptionPane.showMessageDialog(null,""+datefrom);
-        int dateto = Integer.parseInt(jDELTo1.getDate().toString());
-            
-        int d = 0;
-        d = dateto - datefrom;
-        jLEarn1.setText("" +d);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(null,ex);
-        }
+        
     }//GEN-LAST:event_jDELTo1FocusGained
 
     private void jDELTo2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jDELTo2FocusGained
@@ -1246,37 +1260,10 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
 
     private void jDELTo1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jDELTo1FocusLost
         // TODO add your handling code here:
-        try{
-            int datefrom = Integer.parseInt(jDELFrom1.getDate().toString());
-        
-        int dateto = Integer.parseInt(jDELTo1.getDate().toString());
-            
-        int d = 0;
-        d = dateto - datefrom;
-        jLEarn1.setText("" +d);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(null,ex);
-        }
     }//GEN-LAST:event_jDELTo1FocusLost
 
     private void jDELTo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jDELTo1MouseClicked
         // TODO add your handling code here:
-        try{
-            int datefrom = Integer.parseInt(jDELFrom1.getDate().toString());
-        JOptionPane.showMessageDialog(null,""+datefrom);
-        
-        int dateto = Integer.parseInt(jDELTo1.getDate().toString());
-            
-        int d = 0;
-        d = dateto - datefrom;
-        jLEarn1.setText("" +d);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(null,ex);
-        }
     }//GEN-LAST:event_jDELTo1MouseClicked
 
     private void jTLastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTLastNameActionPerformed
@@ -1285,38 +1272,11 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
 
     private void jDELTo1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jDELTo1KeyPressed
         // TODO add your handling code here:
-         try{
-            int datefrom = Integer.parseInt(jDELFrom1.getDate().toString());
-        JOptionPane.showMessageDialog(null,""+datefrom);
-        
-        int dateto = Integer.parseInt(jDELTo1.getDate().toString());
-            
-        int d = 0;
-        d = dateto - datefrom;
-        jLEarn1.setText("" +d);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(null,ex);
-        }
     }//GEN-LAST:event_jDELTo1KeyPressed
 
     private void jDELTo1InputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_jDELTo1InputMethodTextChanged
         // TODO add your handling code here:
-         try{
-        int datefrom = Integer.parseInt(jDELFrom1.getDate().toString());
-        JOptionPane.showMessageDialog(null,""+datefrom);
-        
-        int dateto = Integer.parseInt(jDELTo1.getDate().toString());
-            
-        int d = 0;
-        d = dateto - datefrom;
-        jLEarn1.setText("" +d);
-        }
-        catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(null,ex);
-        }
+         
     }//GEN-LAST:event_jDELTo1InputMethodTextChanged
 
     private void jDELTo1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jDELTo1PropertyChange
@@ -1501,36 +1461,39 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
                if ( d> 0)
                {
                    jLCLNoOFDays2.setText(""+d);
-                   jLTotal.setText((Integer.parseInt(jLCLNoOFDays2.getText()))+"");
+                   jLTotal.setText(" "+(Integer.parseInt(jLCLNoOFDays2.getText()))+"");
                      
                    if ( jLEarn1.getText() != null )
-                     jLTotal.setText((Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLEarn1.getText()))+"");
+                     jLTotal.setText(" "+(Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLEarn1.getText()))+"");
            
                    if ( jLEarn3.getText() != null )
-                     jLTotal.setText((Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLEarn3.getText()))+"");
+                     jLTotal.setText(" "+(Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLEarn3.getText()))+"");
            
                    if ( jLEarn2.getText() != null )
-                     jLTotal.setText((Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLEarn2.getText()))+"");
+                     jLTotal.setText(" "+(Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLEarn2.getText()))+"");
            
                    if ( jLCLNoOFDays1.getText() != null )
-                     jLTotal.setText((Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLCLNoOFDays1.getText()))+"");
+                     jLTotal.setText(" "+(Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLCLNoOFDays1.getText()))+"");
            
                    if ( jLCLNoOFDays3.getText() != null )
-                     jLTotal.setText((Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLCLNoOFDays3.getText()))+"");
+                     jLTotal.setText(" " +  (Integer.parseInt(jLTotal.getText())+Integer.parseInt(jLCLNoOFDays3.getText()))+"");
                
                }
                else
+               {
                    JOptionPane.showMessageDialog(null,"please choose correct Date");
                
+               }
+                   
            }
            catch(NullPointerException ex)
            {
                
            }
            
-        catch(Exception ex)
+       catch(Exception ex)
         {
-            JOptionPane.showMessageDialog(null,ex);
+            JOptionPane.showMessageDialog(null,"This message");
         }
     }//GEN-LAST:event_jDCLTO2PropertyChange
 
@@ -1575,6 +1538,56 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
             JOptionPane.showMessageDialog(null,ex);
         }
     }//GEN-LAST:event_jDCLTO3PropertyChange
+
+    private void jBResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBResetActionPerformed
+        // TODO add your handling code here:
+            jTFirstName.setText("");
+            jTMiddleName.setText("");
+            jTLastName.setText("");
+            jTPan.setText("");
+            jTRank.setText("");
+            jCSEX.setSelectedIndex(0);
+            jTPhoneNo.setText("");
+            jTPranNo.setText("");
+            jTBankAccountNo.setText("");
+            jIdCardno.setText("");
+            jTAdharNo.setText("");
+            jCDrivingLicense.setSelectedIndex(0);
+            jDDateOfBirth.setDate(null);
+            jDGovtServ.setDate(null);
+            jDBattalion.setDate(null);
+            
+            
+            jDELFrom1.setDate(null);
+            jDELTo1.setDate(null);
+            jLEarn1.setText("");
+            jDELFrom2.setDate(null);
+            jDELTo2.setDate(null);
+            jLEarn2.setText("");
+            jDELFrom3.setDate(null);
+            jDELTo3.setDate(null);
+            jLEarn3.setText("");
+            jDCLFrom1.setDate(null);
+            jDCLTO1.setDate(null);
+            jLCLNoOFDays1.setText("");
+            jDCLFrom2.setDate(null);
+            jDCLTO2.setDate(null);
+            jLCLNoOFDays2.setText("");
+            jDCLFrom3.setDate(null);
+            jDCLTO3.setDate(null);
+            jLCLNoOFDays3.setText("");
+            jLTotal.setText("");
+            
+            
+            jCFPET.setSelectedIndex(0);
+            jCFPET2.setSelectedIndex(0);;
+            jTFRemark.setText("");
+            jCAMC.setSelectedIndex(0);
+            jTAMCRemark.setText("");
+            jCARFC.setSelectedIndex(0);
+            jTARFCRemark.setText("");
+          
+    }//GEN-LAST:event_jBResetActionPerformed
 
     /**
      * @param args the command line arguments
