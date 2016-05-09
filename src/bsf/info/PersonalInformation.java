@@ -1042,7 +1042,9 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
         */
         try{
             String st = "Insert into PersonalInformation (RegimentalNo, FirstName, Middle_Name, Last_Name, PAN, Rank, SEX, Phone_NO,Blood_Group,PRAN_NO,Bank_Account_No,ID_Card_No,Adhar_No,Driving_License,Date_Of_Birth,Govt_Serv,Battalion) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            
             ps = con.prepareStatement(st);
+            
             ps.setInt(1, Integer.parseInt(jTRegimentalNo.getText()));
             ps.setString(2, jTFirstName.getText());
             ps.setString(3, jTMiddleName.getText());
@@ -1050,13 +1052,13 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
             ps.setString(5, jTPan.getText());
             ps.setString(6, jTRank.getText());
             ps.setString(7, jCSEX.getSelectedItem().toString());
-            if((jTPhoneNo.getText() != null))
+            if(!(jTPhoneNo.getText().equalsIgnoreCase("")))
                ps.setInt(8, Integer.parseInt(jTPhoneNo.getText()));
             ps.setString(9, jCBloodGroup.getSelectedItem().toString());
             ps.setString(10, jTPranNo.getText());
             if((jTBankAccountNo.getText()!= null))
                 ps.setString(11, jTBankAccountNo.getText());
-            if((jIdCardno.getText()!= null))
+            if(!(jIdCardno.getText().equalsIgnoreCase("")))
                 ps.setInt(12, Integer.parseInt(jIdCardno.getText()));
             ps.setString(13, jTAdharNo.getText());
             ps.setString(14, jCDrivingLicense.getSelectedItem().toString());
@@ -1066,8 +1068,11 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
                 ps.setDate(16,new java.sql.Date( jDGovtServ.getDate().getTime()));
             if ((jDBattalion.getDate()!= null))
                 ps.setDate(17,new java.sql.Date( jDBattalion.getDate().getTime()));
-            rs= ps.executeQuery();
-
+            
+            int r= ps.executeUpdate();
+            
+            ps.close();
+            
             st = "Insert into LeaveDetails (RegimentalNo,EarnleaveFrom1,EarnleaveTo,ElNoOfDays1,EarnleaveFrom2,EarnleaveTO2,ELNoOfDays2,EarnleaveFrom3,EarnleaveTo3,ELNoOfDays3,CommonleaveFrom1,CommonleaveTo1,CLNoOfDays1,CommonleaveFrom2,CommonleaveTo2,CLNoOfDays2,CommonleaveFrom3,CommonleaveTo3,CLNoOfDays3,TotalNoOfDays) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             ps = con.prepareStatement(st);
             
@@ -1076,36 +1081,44 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
                 ps.setDate(2,new java.sql.Date( jDELFrom1.getDate().getTime()));
             if ((jDELTo1.getDate()!= null))
                 ps.setDate(3,new java.sql.Date( jDELTo1.getDate().getTime()));
-            ps.setInt(4,Integer.parseInt(jLEarn1.getText()));
+            if(!(jLEarn1.getText().equalsIgnoreCase("")))
+                ps.setInt(4,Integer.parseInt(jLEarn1.getText()));
             if ((jDELFrom2.getDate()!= null))
                 ps.setDate(5,new java.sql.Date( jDELFrom2.getDate().getTime()));
             if ((jDELTo2.getDate()!= null))
                 ps.setDate(6,new java.sql.Date( jDELTo2.getDate().getTime()));
-            ps.setInt(7,Integer.parseInt(jLEarn2.getText()));
+            if(!(jLEarn2.getText().equalsIgnoreCase("")))
+                ps.setInt(7,Integer.parseInt(jLEarn2.getText()));
             if ((jDELFrom3.getDate()!= null))
                 ps.setDate(8,new java.sql.Date( jDELFrom3.getDate().getTime()));
             if ((jDELTo3.getDate()!= null))
                 ps.setDate(9,new java.sql.Date( jDELTo3.getDate().getTime()));
-            ps.setInt(10,Integer.parseInt(jLEarn3.getText()));
+             if(!(jLEarn3.getText().equalsIgnoreCase("")))
+             ps.setInt(10,Integer.parseInt(jLEarn3.getText()));
             if ((jDCLFrom1.getDate()!= null))
                 ps.setDate(11,new java.sql.Date( jDCLFrom1.getDate().getTime()));
             if ((jDCLTO1.getDate()!= null))
                 ps.setDate(12,new java.sql.Date( jDCLTO1.getDate().getTime()));
-            ps.setInt(13,Integer.parseInt(jLCLNoOFDays1.getText()));
+            if(!(jLCLNoOFDays1.getText().equalsIgnoreCase("")))
+                ps.setInt(13,Integer.parseInt(jLCLNoOFDays1.getText()));
             if ((jDCLFrom2.getDate()!= null))
                 ps.setDate(14,new java.sql.Date( jDCLFrom2.getDate().getTime()));
             if ((jDCLTO2.getDate()!= null))
                 ps.setDate(15,new java.sql.Date( jDCLTO2.getDate().getTime()));
-            ps.setInt(16,Integer.parseInt(jLCLNoOFDays2.getText()));
+            if(!(jLCLNoOFDays2.getText().equalsIgnoreCase("")))
+                ps.setInt(16,Integer.parseInt(jLCLNoOFDays2.getText()));
             if ((jDCLFrom3.getDate()!= null))
                 ps.setDate(17,new java.sql.Date( jDCLFrom3.getDate().getTime()));
             if ((jDCLTO3.getDate()!= null))
                 ps.setDate(18,new java.sql.Date( jDCLTO3.getDate().getTime()));
-            ps.setInt(19,Integer.parseInt(jLCLNoOFDays3.getText()));
-            ps.setInt(20,Integer.parseInt(jLTotal.getText()));
+            if(!(jLCLNoOFDays3.getText().equalsIgnoreCase("")))
+                ps.setInt(19,Integer.parseInt(jLCLNoOFDays3.getText()));
+            if(!(jLTotal.getText().equalsIgnoreCase("")))
+                ps.setInt(20,Integer.parseInt(jLTotal.getText()));
             
-            rs= ps.executeQuery();
-
+            r = ps.executeUpdate();
+            ps.close();
+            
             st = "Insert into Running (RegimentalNo,FPETFirstCycle,FPETSecondCycle,FPETRemark,AMCFirstCycle,AMCRemark,ARFCFirstCycle,ARFCRemark) values (?,?,?,?,?,?,?,?)";
             ps = con.prepareStatement(st);
             ps.setInt(1, Integer.parseInt(jTRegimentalNo.getText()));
@@ -1117,15 +1130,16 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
             ps.setString(7, jCARFC.getSelectedItem().toString());
             ps.setString(8, jTARFCRemark.getText());
           
+            r = ps.executeUpdate();
             ps.close();
-            rs.close();
+            
             new FamilyInformation().setVisible(true);
-            FamilyInformation.jTRegimentalNo.setText(this.jTRegimentalNo.getText());
+            FamilyInformation.jTRegimentalNo.setText(PersonalInformation.jTRegimentalNo.getText());
          this.setVisible(false);
         }
         catch(Exception ex)
         {
-            JOptionPane.showMessageDialog(null,ex.getMessage());
+            JOptionPane.showMessageDialog(null,ex.getStackTrace());
         }
     }//GEN-LAST:event_jBSubmitActionPerformed
 
@@ -1201,10 +1215,7 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
 
     private void jTBankAccountNoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTBankAccountNoKeyTyped
         // TODO add your handling code here:
-        int key = evt.getKeyCode();
-        
-        if ( ( key >= evt.VK_0 && key <= evt.VK_9 ) || ( key == evt.VK_SPACE  ) )
-            JOptionPane.showMessageDialog(null,"Please Enter Bank account no");
+  
     }//GEN-LAST:event_jTBankAccountNoKeyTyped
 
     private void jDELTo1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jDELTo1FocusGained
@@ -1243,19 +1254,12 @@ INSERT INTO "main"."PersonalInformation" SELECT "RegimentalNo","First Name","Mid
 
     private void jTPhoneNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTPhoneNoKeyPressed
         // TODO add your handling code here:
-                       int key = evt.getKeyCode();
-        
-        if( !( key >= evt.VK_0 && key <= evt.VK_9 )|| key == evt.VK_SPACE || key != evt.VK_BACK_SPACE )
-            JOptionPane.showMessageDialog(null,"Please Enter 10 digits No.");
-
+  
     }//GEN-LAST:event_jTPhoneNoKeyPressed
 
     private void jTBankAccountNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTBankAccountNoKeyPressed
         // TODO add your handling code here:
-         int key = evt.getKeyCode();
-        
-        if(!(key >= evt.VK_0 && key <= evt.VK_9)|| key == evt.VK_SPACE || key != evt.VK_BACK_SPACE )
-            JOptionPane.showMessageDialog(null,"Please Enter proper Bank account no");
+   
     }//GEN-LAST:event_jTBankAccountNoKeyPressed
 
     private void jDELTo1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jDELTo1FocusLost

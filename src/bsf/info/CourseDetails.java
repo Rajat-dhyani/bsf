@@ -505,7 +505,7 @@ public class CourseDetails extends javax.swing.JFrame {
     private void jBSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSubmitActionPerformed
         // TODO add your handling code here:
          try{
-            String st = "Insert into CourseDetails (RegimentalNo,Name_of_the_Primary_Course,Primary_institute,Primary_Degree,Primary_Year_Of_Complition,Primary_Grade ,Name_of_the_Secondary_Course,Secondary_institute,Secondary_Degree,Secondary_Year_Of_Complition,Secondary_Grade,Name_of_the_Higher_Course,Higher_institute,Higher_Degree,Higher_Year_Of_Complition,Higher_Grade) values (?,?,?,?,?,?)";
+            String st = "Insert into CourseDetails (RegimentalNo,Name_of_the_Primary_Course,Primary_institute,Primary_Degree,Primary_Year_Of_Completion,Primary_Grade ,Name_of_the_Secondary_Course,Secondary_Institute,Secondary_Degree,Secondary_Year_Of_Completion,Secondary_Grade,Name_of_the_Higher_Course,Higher_Institute,Higher_Degree,Higher_Year_Of_Completion,Higher_Grade) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             
             ps = con.prepareStatement(st);
             
@@ -528,10 +528,9 @@ public class CourseDetails extends javax.swing.JFrame {
             ps.setString(15, jTYear2.getText());
             ps.setString(16, jTGrade2.getText());
             
-            rs= ps.executeQuery();
+            int r= ps.executeUpdate();
 
             ps.close();
-            rs.close();
             
             if (jOperation.getText().equals("update"))
                     JOptionPane.showMessageDialog(rootPane, "record Successfully Updated ");
@@ -543,13 +542,12 @@ public class CourseDetails extends javax.swing.JFrame {
          }
          catch(Exception ex)
          {
-             
+             JOptionPane.showMessageDialog(null, ex.getMessage());
          }
     }//GEN-LAST:event_jBSubmitActionPerformed
 
     private void jBResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBResetActionPerformed
         // TODO add your handling code here:
-            jTRegimentalNo.setText("");
             jTNameOfCourse.setText("");
             jTNameoftheinstitute.setText("");
             jTDegree.setText("");

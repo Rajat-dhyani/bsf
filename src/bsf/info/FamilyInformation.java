@@ -435,7 +435,7 @@ public class FamilyInformation extends javax.swing.JFrame {
     private void jBSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSubmitActionPerformed
         // TODO add your handling code here:
         try{
-            String st = "Insert into FamilyInformation (RegimentalNo,Flat,Road,Locality,Town,State,Country,Father's_Name,Mother's_Name,Wife's_Name,Children's_Name ,Next_Of_Kin,Relationship_with_next_of_kin) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String st = "Insert into FamilyInformation (RegimentalNo,Flat,Road,Locality,Town,State,Country,Father_Name,Mother_Name,Wife_Name,Children_Name ,Next_Of_Kin,Relationship_with_next_of_kin) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
             
             ps = con.prepareStatement(st);
             
@@ -453,18 +453,17 @@ public class FamilyInformation extends javax.swing.JFrame {
             ps.setString(12, jTNextOfKin.getText());
             ps.setString(13, jCRelationship.getSelectedItem().toString());
             
-            rs= ps.executeQuery();
+            int r= ps.executeUpdate();
 
             ps.close();
-            rs.close();
-        
+           
          new CourseDetails().setVisible(true);
-         CourseDetails.jTRegimentalNo.setText(this.jTRegimentalNo.getText());
+         CourseDetails.jTRegimentalNo.setText(FamilyInformation.jTRegimentalNo.getText());
          this.setVisible(false);
          }
         catch(Exception ex)
         {
-            JOptionPane.showMessageDialog(null, ex);
+            JOptionPane.showMessageDialog(null, ex.getStackTrace());
         }
     }//GEN-LAST:event_jBSubmitActionPerformed
 
